@@ -17,9 +17,12 @@ const App = () => {
 
   return (
     <div className='container'>
-      <header>
-        <h1>To-do App</h1>
-      </header>
+      <div className='header'>
+        <header>
+          <h1>To-do App</h1>
+          <h3>Plan through the day without stress!</h3>
+        </header>
+      </div>
 
       <main className='wrapper'>
         <TodoInput add= {addTask}  />

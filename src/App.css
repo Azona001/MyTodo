@@ -14,20 +14,29 @@ body * + * {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
-    background-color: rgb(26, 22, 37);
+    background: #2A7B9B;
+    background: linear-gradient(127deg, rgba(42, 123, 155, 1) 0%, rgba(231, 252, 234, 1) 0%, rgba(221, 233, 250, 1) 100%);
+    max-height: 100vh;
 }
 
 .container {
     width: 400px;
-    margin: 0 auto;
+    margin: auto auto;
     display: flex;
     flex-direction: column;
     background-color: white;
     border-radius: 0.8em;
 }
 
-header {
+.header {
     padding: 0.8em 1em;
+}
+
+header {
+    border-bottom: 1px solid rgba(198, 198, 198, 0.5);
+    padding: 0.2em 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
 }
 
 .wrapper {
@@ -36,10 +45,18 @@ header {
 
 h1 {
     text-align: center;
+   
+}
+
+h3 {
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+    color:  rgb(198, 198, 198);
 }
 
 .search {
-    padding: 0.2em 1em;
+    padding: 0.2em 0.5em;
 }
 
 .taskform {
@@ -53,7 +70,7 @@ h1 {
     display: block;
     width: 80%;
     border-radius: 1em 0 0 1em;
-    padding: 0.5em;
+    padding: 1em;
     border: 0;
     background-color: rgba(198, 198, 198, 0.5);
     
@@ -68,7 +85,7 @@ h1 {
     display: flex;
     justify-content: space-around;
     align-content: center;
-    padding: 0.5em;
+    padding: 1em;
     /*margin-left: 0.1em;*/
     width: 25% ;
     border-radius: 0 1em 1em 0;
@@ -88,7 +105,7 @@ h1 {
 }
 
 .list {
-    padding: 0.2em 1em;
+    padding: 0.2em 0.5em;
     width: 100%;
 
 }
@@ -152,7 +169,7 @@ h1 {
     display: none;
 }
 
-@media (min-width: 400px) {
+/*@media (min-width: 400px) {
     :root {
         font-size: 1.2em;
     }
@@ -165,4 +182,4 @@ h1 {
         width: 640px;
     }
     
-}
+}*/
