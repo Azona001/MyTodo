@@ -1,0 +1,152 @@
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+box-sizing: inherit;
+}
+
+body * + * {
+    margin-top: 0.5em;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    background-color: rgb(26, 22, 37);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.8em;
+}
+
+header {
+    padding: 0.8em 1em;
+}
+
+.wrapper {
+    padding:  0.8em 1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search {
+    padding: 0.2em 1em;
+}
+
+.taskform {
+    width: 100%;
+    padding: 1em 0;
+    display: flex;
+    
+}
+
+.taskform > input:not([type=checkbox]):not([type=radio]) {
+    display: block;
+    width: 80%;
+    border-radius: 1em 0 0 1em;
+    padding: 0.5em;
+    border: 0;
+    background-color: rgba(198, 198, 198, 0.5);
+    
+}
+
+.taskform > input:hover:not([type=checkbox]):not([type=radio]) {
+    border: 1px solid black;
+}
+
+.taskform > button {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 0.5em;
+    /*margin-left: 0.1em;*/
+    width: 25% ;
+    border-radius: 0 1em 1em 0;
+    border: 0;
+    color: white;
+    background-color: rgb(252, 122, 66);
+    
+}
+
+.taskform > button:hover {
+    background-color: white;
+    border: 2px solid rgb(252, 122, 66);
+    color: rgb(252, 122, 66);
+}
+.add {
+    margin-top: 0;
+}
+
+.list {
+    padding: 0.2em 1em;
+    width: 100%;
+
+}
+
+.item {
+    border-radius: 0.5em;
+}
+
+.item:nth-child(even) {
+    background-color: rgba(216, 216, 216, 0.2);
+}
+
+.item > ul {
+    padding: 0.5em 0;
+    margin: 0;
+}
+
+.item > ul > li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.item > ul > li > button {
+    margin-left: auto;
+    border: 0;
+    border-radius: 0.3em;
+    margin-top: 0;
+    background-color: white;
+}
+
+.item > ul > li > button:hover {
+    border: 1px solid red;
+}
+
+.check {
+    margin-right: 0.5em;
+}
+
+.delete {
+    background-color: white;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.delete:hover {
+    color: red;
+    
+}
+
+.line {
+    text-decoration: line-through;
+    color: rgb(153, 153, 153);
+}
+
+.hidden {
+    display: none;
+}
+
