@@ -21,7 +21,7 @@ const TodoItem = ({id, title, removeTodo}) => {
     <ul>  
     <li key= {id} className={completed? 'line': " "} complete={completed} >
         < Check complete= {completed} handleCheck= {handleCheck}  />
-        {title}
+        {title[0].toUpperCase() + title.slice(1)}
         <button 
         type='button' 
         className={completed? " " : "hidden"} 

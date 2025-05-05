@@ -116,10 +116,11 @@ h1 {
 
 .item > ul > li > button {
     margin-left: auto;
+    margin-right: 0.5em;
     border: 0;
     border-radius: 0.3em;
     margin-top: 0;
-    background-color: white;
+    background-color: transparent;
 }
 
 .item > ul > li > button:hover {
@@ -128,10 +129,11 @@ h1 {
 
 .check {
     margin-right: 0.5em;
+    margin-left: 0.5em;
 }
 
 .delete {
-    background-color: white;
+    background-color: transparent;
     width: 1.5em;
     height: 1.5em;
 }
@@ -149,4 +151,5 @@ h1 {
 .hidden {
     display: none;
 }
+
 

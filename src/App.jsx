@@ -8,7 +8,7 @@ const App = () => {
   const[todos, setTodos] = useState([]);
  
   const addTask = (todo) => {
-   setTodos([...todos, {id: crypto.randomUUID(), title: todo }]);
+   setTodos([...todos, {id: crypto.randomUUID(), title: `${todo }`}]);
   };
 
   
