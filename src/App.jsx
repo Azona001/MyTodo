@@ -1,18 +1,26 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import TodoInput from './TodoInput';
 import TodoList from './TodoList';
 import "./App.css";
+import 'animate.css';
 
 const App = () => {
   
-  const[todos, setTodos] = useState([]);
+  const[todos, setTodos] = useState(() => {
+    const saved = localStorage.getItem('todos');
+    return saved ? JSON.parse(saved) : [];
+  }
+  );
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos]);
  
   const addTask = (todo) => {
    setTodos([...todos, {id: crypto.randomUUID(), title: `${todo }`}]);
   };
 
   
-
   const removeTask = (id) => setTodos(todos.filter((todo) => todo.id !== id));
 
   return (
